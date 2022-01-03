@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100;1,300&display=swap');
+
+main {
+    background-color: #2c2d2f;
+    height: auto;
+}
+
+main .heading {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto 50px;
+    padding: 50px 0 5px;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+    color: #00a3e1;
+}
+main .heading h2{
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+    align-self: end;
+}
+
+
+main .bloc-1 {
+    width: 90%;
+    margin: 0 auto 40px;
+    color: #e1e1e1;
+}
+
+main h3 {
+    font-size: 22px;
+    font-family: "Playfair Display", sans-serif;
+    margin-bottom: 20px;
+    
+}
+
+main .description p {
+    font-size: 16px;
+    line-height: 1.65;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+main .info ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 16px;
+}
+
+main .info {
+    height: auto;
+}
+
+main .info li {
+    list-style-type: none;
+    margin: 0 5px 15px;
+    font-family: "Roboto", serif;
+    font-weight: 600;
+    line-height: 1em;
+}
+
+main .info li span {
+    position: relative;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin: 0 15px 0 0;
+    padding: 0 0 1px;
+    color: #fff;
+    margin-right: 15px;
+    border-bottom: 2px solid #00a3e1;
+    font-weight: 700;
+    font-family: "Playfair Display", sans-serif;
+}
+
+main .info li span::after {
+    content: ":";
+    position: absolute;
+    right: -10px;
+}
+
+main .info a {
+    text-decoration: none;
+    color: #00a3e1;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    line-height: 100%;
+    letter-spacing: 1px;
+    border: 2px solid #00a3e1;
+}
+
+main .info a:hover {
+    background-color: #00a3e1;
+    color: #2c2d2f;
+}
+
+main .loisir {
+    width: 90%;
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+main .loisir h3 {
+    padding: 5px 10px;
+    color: #e1e1e1;
+    font: 22px "Playfair Display", serif;
+    line-height: 1rem;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    
+}
+
+main .loisir h3 span {
+    border-bottom: 2px solid #00a3e1;
+    padding: 0 5px;
+}
+
+main .loisir h3 span::after {
+    content: "";
+    width: 2px;
+    height: 5px;
+    background-color: #00a3e1;
+}
+
+main .loisir h4 {
+    font: 18px "Playfair Display", serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+main .loisir .list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #e1e1e1;
+    width: 100%;
+}
+
+main .loisir .item {
+    margin: 0 0 40px;
+    width: 100%;
+}
+
+main .loisir .item i {
+    color: #00a3e1;
+    margin: 0 0 10px;
+}
+
+main .loisir p {
+    margin: 15px 0;
+    font: 14.5px "Roboto",sans-serif ;
+    line-height: 22px;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 750px) {
+   main {
+       position: absolute;
+       left: 199px;
+       height: 100vh;
+       width: calc(100% - 199px);
+   }
+
+   main .loisir .item {
+       width: 48%;
+       padding: 0 20px;
+   }
+
+
+}
+
+@media screen and (min-width: 992px) {
+
+    main .heading {
+        max-width: 1040px;
+        margin: 10px auto 50px;
+    }
+    .bloc-1 {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1040px;
+    }
+ 
+    main .description {
+        max-width: 66%;
+    }
+ 
+    main .info {
+        max-width: 33%;
+        padding: 0 15px;
+    }
+    main .info li {
+        width: 100%;
+    }
+
+    main .loisir .item {
+        width: 30%;
+        padding: 0 20px;
+    }
+
+    main .loisir h3 {
+        margin: 0 0 50px;
+    }
+}

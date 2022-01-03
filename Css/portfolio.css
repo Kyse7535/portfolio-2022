@@ -1,0 +1,54 @@
+h3{
+    color: #e1e1e1;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.65;
+}
+
+h3 span {
+    border-bottom: 2px solid #00a3e1;
+    padding: 5px 10px;
+}
+
+
+.description-project {
+    display: none;
+}
+
+.affiche {
+    display: block;
+    z-index: 5;
+    position: fixed;
+    width: 90%;
+    background-color: #000;
+}
+
+.list-project {
+    width: 90%;
+    max-width: 1040px;
+    margin: 50px auto;
+    display: -ms-grid;
+    display: grid;
+    gap: 20px 15px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    -ms-grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.list-project .item {
+    justify-self: center;
+    width: 90%;
+    transition: transform 0.5s;
+}
+
+.list-project .item:hover {
+    transform: scale(1.1);
+}
+
+
+
+.list-project .item img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
