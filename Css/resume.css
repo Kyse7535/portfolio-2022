@@ -1,0 +1,172 @@
+.content h3{
+    font: 22px "Playfair Display" serif;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+main {
+    height: 100vh;
+    overflow: scroll;
+}
+
+.content {
+    color: #fff;
+    padding: 0 15px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.content h3 span {
+    border-bottom: 2px solid #00a3e1;
+    padding: 0 5px;
+}
+
+.content .formation li.formation-item {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.formation li.nth-element {
+  margin-top: 60px;
+}
+
+
+.formation li span {
+    position: absolute;
+    left: -20px;
+}
+
+.formation li span.to {
+    top: -20px;
+
+}
+
+.formation li span.from {
+    bottom: -20px;
+}
+
+
+.formation span.line-left {
+    display: block;
+    left: -20px;
+    top: -5px;
+    bottom: -8px;
+    background-color: #00a3e1;
+    width: 2px;
+}
+
+
+.formation li span.from::before, .formation li span.to::before {
+    display: inline-block;
+    content: "";
+    width: 6px;
+    height: 5px;
+    border-radius: 50%;
+    border: 2px solid #00a3e1;;
+    position: relative;
+    right: 4px;
+
+}
+
+.formation li h5 {
+    color: #00a3e1;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font: 12px "Roboto",sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.formation li h4 {
+    font: 18px "Playfair Display",serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+}
+
+.formation li.formation-item li {
+    font: 16px "Roboto", sans-serif;
+    line-height: 1.65;
+    font-weight: 500;
+    list-style-position: inside;
+}
+
+.competences li {
+    list-style-position: inside;
+    list-style: none;
+    text-transform: uppercase;
+    font: 16px "Playfair Display",serif;  
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+.competences li::after {
+    content: "";
+    width: 100%;
+    height: 10px;
+    background-color: #404144;
+    display: block;
+    margin: 0 0 20px 0;
+}
+
+.competences li i.fa-html5 {
+    color: #f06529;
+}
+
+.competences li i.fa-css3-alt {
+    color: #2965f1;;
+}
+
+.competences li i.fa-bootstrap {
+    color: #563d7c;
+}
+
+.competences li .fa-react {
+    color: #61dbfb;
+}
+
+.competences li .fa-js {
+    color:#f0db4f;
+}
+
+.competences li .fa-java {
+    color:#faa;
+}
+
+.competences li .fa-php {
+    color: #B0B3D6;
+}
+
+.competences li .fa-symfony {
+    color: #000;
+    background-color: #fff;
+}
+
+@media screen and (min-width: 992px) {
+    .content {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1040px;
+    }
+
+    .formation {
+        width: 59%;
+    }
+
+    .competences {
+        width: 39%;
+    }
+}
+
+
+
+
+
