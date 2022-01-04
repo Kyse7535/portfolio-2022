@@ -54,6 +54,14 @@ main .info {
     height: auto;
 }
 
+main .link-portfolio {
+    text-decoration: none;
+    color: #00a3e1;
+    font: 16px "Playfair Display",sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
 main .info li {
     list-style-type: none;
     margin: 0 5px 15px;
