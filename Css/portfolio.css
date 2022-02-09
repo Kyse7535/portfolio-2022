@@ -39,6 +39,7 @@ h3 span {
     justify-self: center;
     width: 90%;
     transition: transform 0.5s;
+    text-decoration: none;
 }
 
 .list-project .item:hover {
@@ -51,4 +52,11 @@ h3 span {
     width: 100%;
     height: auto;
     border-radius: 15px;
+}
+
+figcaption {
+    color: #e1e1e1;
+    text-align: center;
+    font: 16px "Playfair Display", sans-serif;
+    text-transform: uppercase;
 }
